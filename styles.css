@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #00bf63, #009e4f);
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 4em 1em;
+    background: #f4faf7;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+}
+
+.hero-content span {
+ color: #00bf63; 
+}
+
+.hero-buttons {
+    margin-top: 1.5em;
+}
+
+.hero-buttons .btn,
+.hero-buttons .btn-outline {
+    margin-right: 1em;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #00bf63;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+section {
+    padding: 3em 1em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+h2 span {
+    color: #00bf63;
+}
+
+/* Cards */
+.education-container,
+.skills-container,
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.education-card,
+.skill-card,
+.project-card {
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.education-card:hover,
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 0.7em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #00bf63;
+    color: white;
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #009e4f;
+}
+
+/* Footer */
+footer {
+    background: #009e4f;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
